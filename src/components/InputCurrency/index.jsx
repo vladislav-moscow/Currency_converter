@@ -1,12 +1,12 @@
+import React from 'react';
+import './currencyInput.scss';
 
-import './InputCurrency.scss';
-
-function InputCurrency (amount, currency, currencies, onAmountChange, onCurrencyChange) {
+function CurrencyInput (Props) {
   return (
     <div className="group">
-      <input type="text" value={amount} onChange={ev => onAmountChange(ev.target.value)}/>
-      <select name="" id="" value={currency} onChange={ev => onCurrencyChange(ev.target.value)}>
-        {currencies.map((currency) => {
+      <input type="text" value={Props.amount} onChange={ev => Props.onAmountChange(ev.target.value)}/>
+      <select name="" id="" value={Props.currency} onChange={ev => Props.onCurrencyChange(ev.target.value)}>
+        {Props.currencies.map((currency) => {
            return <option value={currency}>{currency}</option>
         })}
       </select>
@@ -14,4 +14,4 @@ function InputCurrency (amount, currency, currencies, onAmountChange, onCurrency
   )
 }
 
-export default InputCurrency
+export default CurrencyInput;
