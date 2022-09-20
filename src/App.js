@@ -20,8 +20,8 @@ function App() {
 
   return (
     <div className="App">
-      <InputCurrency currencies={Object.keys(rates)} amount={amount1} currency={currency1}/>
-      <InputCurrency currencies={Object.keys(rates)} amount={amount2} currency={currency2}/>
+      <InputCurrency onAmountChange={setAmount1} onCurrencyChange={setCurrency1} currencies={Object.keys(rates)} amount={amount1} currency={currency1}/>
+      <InputCurrency onAmountChange={setAmount2} onCurrencyChange={setCurrency2} currencies={Object.keys(rates)} amount={amount2} currency={currency2}/>
     </div>
   );
 }
