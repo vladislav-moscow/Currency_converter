@@ -1,0 +1,24 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #09090c;
+  color: rgb(186, 221, 249);
+}
+
+.App {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding-top: 250px;
+
+  .currency__title {
+    font-size: 3rem;
+    margin-bottom: 50px;
+  }
+}

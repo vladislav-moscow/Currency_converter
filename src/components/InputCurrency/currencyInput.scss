@@ -1,0 +1,38 @@
+.currency {
+  background: #335;
+  width: 280px;
+  margin: 0 auto 20px;
+  display: grid;
+  grid-template-columns: 200px 80px;
+  border-radius: 15px;
+
+  input, select {
+    background: none;
+    border: 0;
+    color: #fff;
+  }
+
+  input {
+    padding-left: 15px;
+
+    &:active {
+      outline: none;
+    }
+    &:focus {
+      outline: none;
+    }
+  }
+
+  select {
+    padding: 13px;
+    background: #335;
+    border-radius: 0 15px 15px  0;
+
+    &:active {
+      outline: none;
+    }
+    &:focus {
+      outline: none;
+    }
+  }
+}

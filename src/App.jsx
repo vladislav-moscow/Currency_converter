@@ -8,8 +8,8 @@ function App() {
 
   const [amount1, setAmount1] = useState(1);
   const [amount2, setAmount2] = useState(1);
-  const [currency1, setCurrency1] = useState('RUB');
-  const [currency2, setCurrency2] = useState('USD');
+  const [currency1, setCurrency1] = useState('USD');
+  const [currency2, setCurrency2] = useState('RUB');
   const [rates, setRates] = useState([]);
 
   const format = (number) => number.toFixed(2);
@@ -47,6 +47,7 @@ function App() {
 
   return (
     <div className="App">
+      <h1 className="currency__title">Конвертер валют</h1>
       <CurrencyInput onAmountChange={handleAmount1Change} onCurrencyChange={handleCurrency1Change} currencies={Object.keys(rates)} amount={amount1} currency={currency1}/>
       <CurrencyInput onAmountChange={handleAmount2Change} onCurrencyChange={handleCurrency2Change} currencies={Object.keys(rates)} amount={amount2} currency={currency2}/>
     </div>
